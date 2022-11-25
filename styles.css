@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #2c3e50;
+}
+
+.container{
+    margin: 70px auto;
+    width: 750px;
+    height: 590px;
+    background-color: #25262c;
+    box-shadow: 0 2px 15px 5px #1c1c1f;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+img{
+    width: 580px;
+    height: 80px;
+    transform: perspective(400px)
+    rotateX(-25deg)
+    translateY(30px);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 888;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title-left_side div{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.title-left_side div h2{
+    width: 210px;
+}
+
+.box{
+    background-color: #515155;
+    width: 70px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.box:nth-child(3){
+    width: 30px;
+}
+
+.title-right_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #515155;
+    color: #515155;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.title-right_side:hover{
+    color: #acacb1;
+    border-color: #acacb1;
+}
+
+.title h4{
+    color: #8f8f91;
+}
+
+h3{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #515155;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 650px;
+    height: 220px;
+    padding: 10px 10px 40px;
+    transform: perspective(400px)
+    rotateX(30deg)
+    translateY(30px);
+    margin: -25px 0px 40px;
+}
+
+.btn-box::before{
+    content: "";
+    display: flex;
+    width: 560px;
+    position: absolute;
+    left: 60px;
+    top: -70px;
+    box-shadow: 0 3px 70px #fff;
+    z-index: -7;
+    height: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blue-btn, .green-btn, .btn{
+    color: transparent;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blue-btn:hover{
+    color: #fff;
+    outline: 1px solid #4eaaff;
+    outline-offset: 3px;
+}
+
+.green-btn:hover{
+    color: #fff;
+    outline: 1px solid #66d258;
+    outline-offset: 3px;
+}
+
+.blue-btn{
+    background-color: #4eaaff;
+    margin: 5px;
+    
+}
+
+.green-btn{
+    background-color: #66d258;
+    margin: 5px;
+}
+
+.btn{
+    color: #8d8d91;
+    margin: 5px 0;
+}
+
+.footer{
+    border-top: 1px solid #515155;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_left span{
+    color: #8d8d91;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.standard::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    left: -17px;
+    top: 3px;  
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3398dc;
+
+}
+
+.vip::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    left: -17px;
+    top: 3px;  
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #66d258;
+}
+
+.footer_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    width: 130px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #3398dc;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer_right:hover{
+    background-color: #2788c9;
+}
+
+
